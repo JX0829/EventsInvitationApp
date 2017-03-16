@@ -14,6 +14,7 @@
 		F63D3A621E7A370700C88E09 /* EventsInvitation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F63D3A601E7A370700C88E09 /* EventsInvitation.xcdatamodeld */; };
 		F63D3A641E7A370700C88E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63D3A631E7A370700C88E09 /* Assets.xcassets */; };
 		F63D3A671E7A370700C88E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63D3A651E7A370700C88E09 /* LaunchScreen.storyboard */; };
+		F66576201E7A738B00CF8FAC /* CJCarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665761F1E7A738B00CF8FAC /* CJCarouselVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F63D3A631E7A370700C88E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F63D3A661E7A370700C88E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F63D3A681E7A370700C88E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F665761F1E7A738B00CF8FAC /* CJCarouselVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJCarouselVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		F63D3A4D1E7A370700C88E09 = {
 			isa = PBXGroup;
 			children = (
+				F665761E1E7A41F500CF8FAC /* CJStart */,
 				F63D3A581E7A370700C88E09 /* EventsInvitation */,
 				F63D3A571E7A370700C88E09 /* Products */,
 				BA75938353E85D67B0007CE2 /* Pods */,
@@ -89,6 +92,14 @@
 				F63D3A601E7A370700C88E09 /* EventsInvitation.xcdatamodeld */,
 			);
 			path = EventsInvitation;
+			sourceTree = "<group>";
+		};
+		F665761E1E7A41F500CF8FAC /* CJStart */ = {
+			isa = PBXGroup;
+			children = (
+				F665761F1E7A738B00CF8FAC /* CJCarouselVC.swift */,
+			);
+			name = CJStart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F63D3A621E7A370700C88E09 /* EventsInvitation.xcdatamodeld in Sources */,
+				F66576201E7A738B00CF8FAC /* CJCarouselVC.swift in Sources */,
 				F63D3A5C1E7A370700C88E09 /* ViewController.swift in Sources */,
 				F63D3A5A1E7A370700C88E09 /* AppDelegate.swift in Sources */,
 			);
@@ -378,6 +390,7 @@
 				F63D3A6D1E7A370700C88E09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
