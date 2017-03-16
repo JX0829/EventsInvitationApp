@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D101341DD4C86D6D9EA146D /* Pods_EventsInvitation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F0E1EEDEA9BD49D5B142DA /* Pods_EventsInvitation.framework */; };
 		F63D3A5A1E7A370700C88E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D3A591E7A370700C88E09 /* AppDelegate.swift */; };
 		F63D3A5C1E7A370700C88E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63D3A5B1E7A370700C88E09 /* ViewController.swift */; };
 		F63D3A5F1E7A370700C88E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63D3A5D1E7A370700C88E09 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05012201345BD7D2F1C50C5E /* Pods-EventsInvitation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsInvitation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsInvitation/Pods-EventsInvitation.debug.xcconfig"; sourceTree = "<group>"; };
+		37F0E1EEDEA9BD49D5B142DA /* Pods_EventsInvitation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsInvitation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F2927D8B2D1013D76349EC /* Pods-EventsInvitation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsInvitation.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsInvitation/Pods-EventsInvitation.release.xcconfig"; sourceTree = "<group>"; };
 		F63D3A561E7A370700C88E09 /* EventsInvitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsInvitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63D3A591E7A370700C88E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F63D3A5B1E7A370700C88E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D101341DD4C86D6D9EA146D /* Pods_EventsInvitation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74DA267025F28E2724308E75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37F0E1EEDEA9BD49D5B142DA /* Pods_EventsInvitation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA75938353E85D67B0007CE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05012201345BD7D2F1C50C5E /* Pods-EventsInvitation.debug.xcconfig */,
+				86F2927D8B2D1013D76349EC /* Pods-EventsInvitation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F63D3A4D1E7A370700C88E09 = {
 			isa = PBXGroup;
 			children = (
 				F63D3A581E7A370700C88E09 /* EventsInvitation */,
 				F63D3A571E7A370700C88E09 /* Products */,
+				BA75938353E85D67B0007CE2 /* Pods */,
+				74DA267025F28E2724308E75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F63D3A6B1E7A370700C88E09 /* Build configuration list for PBXNativeTarget "EventsInvitation" */;
 			buildPhases = (
+				02EF711B6DD9D488D4D257F7 /* [CP] Check Pods Manifest.lock */,
 				F63D3A521E7A370700C88E09 /* Sources */,
 				F63D3A531E7A370700C88E09 /* Frameworks */,
 				F63D3A541E7A370700C88E09 /* Resources */,
+				B2956EF31372DB8877C9F515 /* [CP] Embed Pods Frameworks */,
+				1E08ACE831236F160F51220F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02EF711B6DD9D488D4D257F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E08ACE831236F160F51220F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsInvitation/Pods-EventsInvitation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2956EF31372DB8877C9F515 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsInvitation/Pods-EventsInvitation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F63D3A521E7A370700C88E09 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		F63D3A6C1E7A370700C88E09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05012201345BD7D2F1C50C5E /* Pods-EventsInvitation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EventsInvitation/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		F63D3A6D1E7A370700C88E09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F2927D8B2D1013D76349EC /* Pods-EventsInvitation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EventsInvitation/Info.plist;

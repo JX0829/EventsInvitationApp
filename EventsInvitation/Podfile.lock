@@ -1,0 +1,21 @@
+PODS:
+  - PureLayout (3.0.2)
+  - ReactiveCocoa (5.0.1):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.0):
+    - Result (~> 3.1)
+  - Result (3.2.0)
+
+DEPENDENCIES:
+  - PureLayout
+  - ReactiveCocoa (~> 5.0.0)
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  ReactiveCocoa: f577006aa6c7b0b08020109ebaae3b77ada00adc
+  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
+  Result: 5a6705171c0613cc5fbf6ec55ff520cc62a8e81d
+
+PODFILE CHECKSUM: 1074abc2a3e1a7bdf093b583be472d6711919f79
+
+COCOAPODS: 1.2.0
